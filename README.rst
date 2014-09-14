@@ -27,9 +27,8 @@ Quick start
 
 3. Run `python manage.py syncdb` to create the polls models.
 
-4. Start the development server and visit http://127.0.0.1:8000/admin/
-   to set your Web application to offline mode by setting Value field.
-   (you'll need the Admin app enabled).
+4. Visit the admin site to set your Web application to offline mode by 
+   setting offline flag (you'll need the Admin app enabled).
 
 5. You can customize the message shown on the website.
 
