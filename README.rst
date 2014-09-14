@@ -3,7 +3,16 @@ Offline
 =====
 
 Offline is a simple Django app to put a Django Web application under 
-maintenance/offline using a simple interface under admin role.
+maintenance/offline mode using a simple interface under admin role.
+
+Installation
+------------
+
+django-offline works with python >= 2.5 and django >= 1.2 
+
+Recommended way to install is by using pip as below:
+
+pip install django-offline
 
 Quick start
 -----------
