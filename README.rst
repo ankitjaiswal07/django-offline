@@ -12,7 +12,7 @@ Quick start
 
       INSTALLED_APPS = (
           ...
-          'django-offline',
+          'offline',
       )
 
 2. Add the OfflineMiddleware to MIDDLEWARE_CLASSES list 
