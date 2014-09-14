@@ -5,8 +5,6 @@ Offline
 Offline is a simple Django app to put a Django Web application under 
 maintenance/offline using a simple interface under admin role.
 
-Detailed documentation is in the "docs" directory.
-
 Quick start
 -----------
 

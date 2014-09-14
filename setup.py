@@ -14,7 +14,7 @@ setup(
     license='BSD License',  
     description='A simple Django app to swith your Django project between offline/online mode and display a 503 error page, while your django site is offline (under maintenance)',
     long_description=README,
-    url='http://www.example.com/',
+    url='https://github.com/ankitjaiswal07/django-offline',
     author='Ankit Jaiswal',
     author_email='ankit.jaiswal07@gmail.com',
     classifiers=[
