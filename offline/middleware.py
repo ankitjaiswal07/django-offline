@@ -12,8 +12,10 @@ from views import offline_view
 class OfflineMiddleware(object):
 
     def process_request(self, request):
+        if request.path.startswith('/admin'):
+            return
         if request.user.is_authenticated() and offline.is_enabled() \
-            and not request.user.is_staff:
+            and not request.user.is_superuser:
             return offline_view(request)
         elif not (hasattr(request, 'user')
                   and request.user.is_authenticated()) \
@@ -23,7 +25,7 @@ class OfflineMiddleware(object):
 
     def process_response(self, request, response):
         if hasattr(request, 'user') and offline.is_enabled() \
-            and request.user.is_staff \
+            and request.user.is_superuser \
             and self.is_html_response(response):
             template = get_template('admin_notification.html')
             warning_message = template.render(Context())
